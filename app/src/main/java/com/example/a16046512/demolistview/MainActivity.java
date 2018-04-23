@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Food selectedFood = food.get(i);
+                //toast
                 Toast.makeText(MainActivity.this,selectedFood.getName()+" Star: "+selectedFood.isStar(),Toast.LENGTH_LONG).show();
             }
         });
